@@ -1,0 +1,114 @@
+<!-- Author: Kyle P School Illois Tech  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5 - HTML FORM</title>
+</head>
+
+<body>
+    <h1>Volunteer Form</h1>
+    <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+        <fieldset class="myinfo">
+            <legend>
+                My info
+            </legend>
+            <div class="info">
+                <div class="fname">
+                    <label for="name">
+                        Name:
+                        <input type="text" name="first_name_field" placeholder="First Name">
+                    </label>
+                </div>
+                <div class="lname">
+                    <label for="name">
+                        Last Name:
+                        <input type="text" name="last_name_field" placeholder="Last Name">
+                    </label>
+                </div>
+                <div class="Phone">
+                    <label for="Phone">
+                        Phone:
+                        <input type="Phone" name="phone_field" placeholder="Phone">
+                    </label>
+                </div>
+                <div class="email">
+                    <label for="email">
+                        Email:
+                        <input type="email" name="email_field" placeholder="Email">
+                    </label>
+                </div>
+                <div class="gender">
+                    <div class="gender">Gender:</div>
+                    <input type="radio" id="male" name="gender_field" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender_field" value="female">
+                    <label for="female">female</label>
+                </div>
+                <div class="age">
+                    <label for="Age">Age:</label>
+                    <select name="age_field" id="age">
+                        <option value="under 18">Under 18</option>
+                        <option value="Over 18">Over 18</option>
+                    </select>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <fieldset class="available">
+            <legend>
+                My Availabiity
+            </legend>
+            <div class="info">
+                <div><strong>Days Available:</strong></div>
+                <div class="age">
+                    <div>
+                        <label for="days">
+                            Sundays <input type="checkbox" name="available_field[]" value="sunday" id="">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="days">
+                            Mondays <input type="checkbox" name="available_field[]" value="monday" id="">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="days">
+                            Tuesdays <input type="checkbox" name="available_field[]" value="tuesday" id="">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="days">
+                            Wednesdays <input type="checkbox" name="available_field[]" value="wednesday" id="">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="days">
+                            Thursdays <input type="checkbox" name="available_field[]" value="thursday" id="">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="days">
+                            Fridays <input type="checkbox" name="available_field[]" value="friday" id="">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="days">
+                            Saturdays <input type="checkbox" name="available_field[]" value="saturday" id="">
+                        </label>
+                    </div>
+                    <div>
+                        <div>Comments</div>
+                        <textarea name="comments" id=""></textarea>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <input type="hidden" name="hidden_field" value="kpars">
+        <input type="submit" value="Submit Query">
+    </form>
+</body>
+</html>
