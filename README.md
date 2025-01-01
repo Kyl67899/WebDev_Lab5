@@ -4,9 +4,6 @@
 
 ### The purpose of this assignment is to learn about HTML Form.
 
-HTML FORM
-
-
 # Illnois Tech Web Development Projects
 
 | Project Name | Level | Recommended Tech | Link/Status
